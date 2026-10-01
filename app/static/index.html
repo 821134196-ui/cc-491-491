@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会议决议执行跟踪系统</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">决</span>
+    <div>
+      <div class="brand-title">会议决议执行跟踪</div>
+      <div class="brand-sub">记录 · 分派 · 证据 · 验收 · 归档</div>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-view="meetings" class="tab">会议记录</button>
+    <button data-view="resolutions" class="tab">决议分派</button>
+    <button data-view="todos" class="tab">待办</button>
+    <button data-view="evidence" class="tab">证据提交</button>
+    <button data-view="reviews" class="tab">验收复议</button>
+    <button data-view="archive" class="tab">归档检索</button>
+    <button data-view="messages" class="tab">消息回执</button>
+  </nav>
+  <div class="actor-box">
+    <label for="actorSelect">当前操作人</label>
+    <select id="actorSelect"></select>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<div id="toast" class="toast hidden"></div>
+<div id="modalRoot"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
